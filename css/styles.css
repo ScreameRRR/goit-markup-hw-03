@@ -12,8 +12,7 @@ html {
 body {
   font-family: Roboto, sans-serif;
   /* padding: 0 215px; */
-  outline: 1px solid red;
-  /* margin: 0; */
+  max-width: 1600px;
 }
 
 a {
@@ -24,10 +23,10 @@ ul {
   list-style-type: none;
 }
 
-img {
+/* img {
   max-width: 100%;
   display: inline-block;
-}
+} */
 /* Стилі для шапки */
 
 .container {
@@ -123,6 +122,10 @@ img {
 
 /* Стилі для головного контенту */
 
+.hero-container {
+  display: inline-block;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -130,14 +133,28 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
-/* .hero-img {
+.hero-img {
   display: block;
-  width: 100%;
-} */
+  max-width: 100%;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 .hero-button {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -145,6 +162,30 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-container ul {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-container ul li:not(:last-child) {
+  padding-right: 30px;
+}
+.benefits-container ul li:first-child {
+  margin-left: 215px;
+}
+
+.benefits-container ul li:last-child {
+  margin-right: 215px;
 }
 
 .benefits-title {
@@ -161,15 +202,52 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 270px;
+  height: 75px;
 }
 
 .sub-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  text-align: center;
+}
+
+.flex-container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-container ul {
+  display: flex;
+}
+
+.flex-container ul li:not(:last-child) {
+  padding-right: 30px;
+}
+
+/* наша команда */
+
+.team-container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-container ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.team-container ul li {
+  padding-right: 30px;
 }
 
 .doing {
@@ -200,8 +278,34 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: center;
+}
+
+.socials-team {
+  padding-right: 10px;
 }
 /* Стилі для підвалу */
+
+.fav-clients {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fav-clients ul {
+  display: flex;
+  padding-left: 0;
+}
+
+.fav-clients ul li:not(:last-child) {
+  padding-right: 30px;
+}
+
+.clients-container {
+  display: inline;
+}
 
 footer {
   font-family: Roboto, sans-serif;
@@ -223,6 +327,22 @@ footer {
 
 .footer-div-background {
   background: #2f303a;
+  display: flex;
+  width: 1600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-div-background div {
+  text-align: left;
+  flex-wrap: wrap;
+  align-items: left;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts-footer {
@@ -241,7 +361,66 @@ footer {
   color: #ffffff;
 }
 
+.footer-socials ul {
+  display: flex;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-socials ul li:not(:last-child) {
+  padding-right: 10px;
+}
+
 /* Стилі для Портфоліо */
+
+.portfolio-filter {
+  display: flex;
+}
+
+.portfolio-container {
+  width: 1600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-container ul li {
+  margin-right: 8px;
+}
+
+.portfolio-list {
+  display: flex;
+  width: 1600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.portfolio-list ul {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-list ul li {
+  margin-right: 30px;
+}
+
+.portfolio-list ul li:nth-child(3n) {
+  margin-right: 0;
+}
 
 .portfolio-button {
   background: #f5f4fa;
