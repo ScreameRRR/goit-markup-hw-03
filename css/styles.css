@@ -1,9 +1,81 @@
 /* Стилі для Студіо */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  /* padding: 0 215px; */
+  outline: 1px solid red;
+  /* margin: 0; */
+}
 
 a {
   text-decoration: none;
 }
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
 /* Стилі для шапки */
+
+.container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-wrap: wrap;
+  /* align-content: center; */
+}
+
+.nav-logo {
+  margin-left: 215px;
+  /* margin-right: 85px; */
+}
+
+.nav-menu {
+  margin-left: 85px;
+  margin-right: 305px;
+}
+.nav-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.nav-list li:not(:last-child) {
+  padding-right: 50px;
+}
+
+.nav-item {
+  margin-right: 305px;
+  margin-left: 85px;
+  padding: 0;
+}
+
+.nav-contacts ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-contacts ul li img {
+  padding-right: 10px;
+}
+
+.nav-contacts ul li:first-child {
+  padding-right: 30px;
+}
+
 .logo-blue {
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -24,7 +96,6 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
   letter-spacing: 0.02em;
 }
 
@@ -47,12 +118,10 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 215px;
 }
 
 /* Стилі для головного контенту */
-body {
-  font-family: Roboto, sans-serif;
-}
 
 .hero-title {
   font-weight: 900;
@@ -62,6 +131,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+/* .hero-img {
+  display: block;
+  width: 100%;
+} */
 
 .hero-button {
   font-weight: 700;

@@ -13,34 +13,41 @@
   <body>
     <!-- Шапка сайта -->
     <header>
-      <nav>
-        <a href="/"class="logo-blue">Web <span class="logo-black">Studio</span></a>
-        <ul>
-          <li><a href="./index.html" class="nav-button-black">Студия</a></li>
-          <li><a href="./portfolio.html" class="nav-button-black">Портфолио</a></li>
-          <li><a href="#" class="nav-button-black">Контакты</a></li>
+      <nav class="container">
+       <div class="nav-logo"> <a href="/"class="logo-blue">Web<span class="logo-black"> Studio</span></a></div>
+        <div class="nav-menu">
+          <ul class="nav-list">
+          <li ><a href="./index.html" class="nav-button-black">Студия</a></li>
+          <li ><a href="./portfolio.html" class="nav-button-black">Портфолио</a></li>
+          <li ><a href="#" class="nav-button-black">Контакты</a></li>
         </ul>
-      </nav>
-      <address>
+        </div>
+      <div class="nav-contacts">
+      <ul>
+        <li>
         <a href="mailto:info@devstudio.com"
           class="nav-button-black" ><img
             src="./images/mail-icon.svg"
             alt="mail-icon"
           />info@devstudio.com</a
-        >
-        <br />
+        ></li>
+        <li>
         <a href="tel:+380961111111"
           class="nav-phone-black"><img src="./images/phone-icon.svg" alt="phone-icon" />+38 096 111 11
           11
         </a>
-      </address>
+        </li>
+      </ul>
+      </div>
+      </nav>
+      
     </header>
     <!-- Головна частина сайта -->
     <main>
       <section>
         <div class="hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <img src="./images/header-image.jpg" alt="imageoverlay" /> <br />
+          <img class="hero-img" src="./images/header-image.jpg" alt="imageoverlay" /> 
           <button class="hero-button">Заказать услугу</button>
         </div>
       </section>
@@ -58,7 +65,7 @@
           </li>
           <li>
             <div>
-              <img src="./images/vector.svg" alt="vector" /><br />
+              <img src="./images/vector.svg" alt="vector" />
               <b class="benefits-title">Пунктуальность</b>
               <p class="benefits-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -68,7 +75,7 @@
           </li>
           <li>
             <div>
-              <img src="./images/vector2.svg" alt="Vector2" /><br />
+              <img src="./images/vector2.svg" alt="Vector2" />
               <b class="benefits-title">Планирование</b>
               <p class="benefits-text">
                 Равным образом консультация с широким активом в значительной
@@ -78,7 +85,7 @@
           </li>
           <li>
             <div>
-              <img src="./images/vector3.svg" alt="vector3" /><br />
+              <img src="./images/vector3.svg" alt="vector3" />
               <b class="benefits-title">Современные технологии</b>
               <p class="benefits-text">
                 Значимость этих проблем настолько очевидна, что реализация
